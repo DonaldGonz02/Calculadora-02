@@ -15,14 +15,16 @@ namespace Calculadora_0202
         DefinedNot = 0,
         Suma = 1,
         Resta = 2,
-        Divicion = 3,
+        Division = 3,
         Multiplicacion = 4,
     }
     public partial class Form1 : Form
     {
         double value1 = 0;
         double value2 = 0;
+       
         operacion operador = operacion.DefinedNot;
+        
         public Form1()
         {
             InitializeComponent();
@@ -39,6 +41,7 @@ namespace Calculadora_0202
                 Resultados.Text += numero;
             }
         }
+        
         private double RealizarOpe()
         {
             double Resultado = 0;
@@ -50,7 +53,7 @@ namespace Calculadora_0202
                 case operacion.Resta:
                     Resultado = value1 - value2;
                     break;
-                case operacion.Divicion:
+                case operacion.Division:
                     Resultado = value1 / value2;
                     break;
                 case operacion.Multiplicacion:
