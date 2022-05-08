@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Calcualadora_0101
+namespace Calculadora_0202
 {
     public enum operacion
     {
-        noDefinida = 0,
+        DefinedNot = 0,
         Suma = 1,
         Resta = 2,
         Divicion = 3,
@@ -20,9 +20,9 @@ namespace Calcualadora_0101
     }
     public partial class Form1 : Form
     {
-        double valor1 = 0;
-        double valor2 = 0;
-        operacion operador = operacion.noDefinida;
+        double value1 = 0;
+        double value2 = 0;
+        operacion operador = operacion.DefinedNot;
         public Form1()
         {
             InitializeComponent();
@@ -45,16 +45,16 @@ namespace Calcualadora_0101
             switch (operador)
             {
                 case operacion.Suma:
-                    Resultado = valor1 + valor2;
+                    Resultado = value1 + value2;
                     break;
                 case operacion.Resta:
-                    Resultado = valor1 - valor2;
+                    Resultado = value1 - value2;
                     break;
                 case operacion.Divicion:
-                    Resultado = valor1 / valor2;
+                    Resultado = value1 / value2;
                     break;
                 case operacion.Multiplicacion:
-                    Resultado = valor1 * valor2;
+                    Resultado = value1 * value2;
                     break;
             }
             return Resultado;
@@ -117,39 +117,39 @@ namespace Calcualadora_0101
         private void btnSuma_Click(object sender, EventArgs e)
         {
             operador = operacion.Suma;
-            valor1 = Convert.ToDouble(Resultados.Text);
+            value1 = Convert.ToDouble(Resultados.Text);
             Resultados.Text = "0";
            
         }
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            if(valor2==0)
+            if(value2 == 0)
             {
-            valor2 = Convert.ToDouble(Resultados.Text);
+            value2 = Convert.ToDouble(Resultados.Text);
                 double Resultado = RealizarOpe();
-            valor1 = 0;
-            valor2 = 0;
+            value1 = 0;
+            value2 = 0;
             Resultados.Text = Convert.ToString(Resultado);
             }
         }
         private void btnResta_Click(object sender, EventArgs e)
         {
             operador = operacion.Resta;
-            valor1 = Convert.ToDouble(Resultados.Text);
+            value1 = Convert.ToDouble(Resultados.Text);
             Resultados.Text = "0";
         }
 
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
             operador = operacion.Multiplicacion;
-            valor1 = Convert.ToDouble(Resultados.Text);
+            value1 = Convert.ToDouble(Resultados.Text);
             Resultados.Text = "0";
         }
 
         private void btnDivicion_Click(object sender, EventArgs e)
         {
             operador = operacion.Divicion;
-            valor1 = Convert.ToDouble(Resultados.Text);
+            value1 = Convert.ToDouble(Resultados.Text);
             Resultados.Text = "0";
         }
 
@@ -181,6 +181,10 @@ namespace Calcualadora_0101
         {
 
         }
+
+        private void Resultados_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-// ;)

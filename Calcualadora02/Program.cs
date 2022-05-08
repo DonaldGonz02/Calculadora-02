@@ -16,7 +16,7 @@ namespace Calcualadora_0101
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Calculadora_0202.Form1());
         }
     }
 }

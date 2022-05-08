@@ -1,5 +1,5 @@
 ﻿
-namespace Calcualadora_0101
+namespace Calculadora_0202
 {
     partial class Form1
     {
@@ -52,22 +52,24 @@ namespace Calcualadora_0101
             // 
             // Resultados
             // 
-            this.Resultados.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Resultados.Location = new System.Drawing.Point(12, 11);
+            this.Resultados.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Resultados.Location = new System.Drawing.Point(12, 12);
             this.Resultados.Name = "Resultados";
             this.Resultados.ReadOnly = true;
-            this.Resultados.Size = new System.Drawing.Size(294, 38);
+            this.Resultados.Size = new System.Drawing.Size(270, 29);
             this.Resultados.TabIndex = 0;
             this.Resultados.Text = "0";
             this.Resultados.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Resultados.TextChanged += new System.EventHandler(this.Resultados_TextChanged);
             // 
             // btn1
             // 
             this.btn1.BackColor = System.Drawing.Color.Silver;
-            this.btn1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Location = new System.Drawing.Point(12, 184);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(54, 55);
+            this.btn1.Size = new System.Drawing.Size(50, 55);
             this.btn1.TabIndex = 1;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
@@ -76,10 +78,11 @@ namespace Calcualadora_0101
             // btn2
             // 
             this.btn2.BackColor = System.Drawing.Color.Silver;
-            this.btn2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(72, 184);
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Location = new System.Drawing.Point(66, 184);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(54, 55);
+            this.btn2.Size = new System.Drawing.Size(50, 55);
             this.btn2.TabIndex = 2;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
@@ -88,10 +91,11 @@ namespace Calcualadora_0101
             // btn3
             // 
             this.btn3.BackColor = System.Drawing.Color.Silver;
-            this.btn3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(132, 184);
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.Location = new System.Drawing.Point(121, 184);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(54, 55);
+            this.btn3.Size = new System.Drawing.Size(50, 55);
             this.btn3.TabIndex = 3;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
@@ -100,10 +104,11 @@ namespace Calcualadora_0101
             // btn6
             // 
             this.btn6.BackColor = System.Drawing.Color.Silver;
-            this.btn6.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(132, 123);
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6.Location = new System.Drawing.Point(121, 123);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(54, 55);
+            this.btn6.Size = new System.Drawing.Size(50, 55);
             this.btn6.TabIndex = 6;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
@@ -112,10 +117,11 @@ namespace Calcualadora_0101
             // btn5
             // 
             this.btn5.BackColor = System.Drawing.Color.Silver;
-            this.btn5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(72, 123);
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.Location = new System.Drawing.Point(66, 123);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(54, 55);
+            this.btn5.Size = new System.Drawing.Size(50, 55);
             this.btn5.TabIndex = 5;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
@@ -124,10 +130,11 @@ namespace Calcualadora_0101
             // btn4
             // 
             this.btn4.BackColor = System.Drawing.Color.Silver;
-            this.btn4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.Location = new System.Drawing.Point(12, 123);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(54, 55);
+            this.btn4.Size = new System.Drawing.Size(50, 55);
             this.btn4.TabIndex = 4;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
@@ -136,10 +143,11 @@ namespace Calcualadora_0101
             // btn9
             // 
             this.btn9.BackColor = System.Drawing.Color.Silver;
-            this.btn9.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(132, 62);
+            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9.Location = new System.Drawing.Point(121, 62);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(54, 55);
+            this.btn9.Size = new System.Drawing.Size(50, 55);
             this.btn9.TabIndex = 9;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
@@ -148,10 +156,11 @@ namespace Calcualadora_0101
             // btn8
             // 
             this.btn8.BackColor = System.Drawing.Color.Silver;
-            this.btn8.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(72, 62);
+            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8.Location = new System.Drawing.Point(66, 62);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(54, 55);
+            this.btn8.Size = new System.Drawing.Size(50, 55);
             this.btn8.TabIndex = 8;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
@@ -160,10 +169,11 @@ namespace Calcualadora_0101
             // btn7
             // 
             this.btn7.BackColor = System.Drawing.Color.Silver;
-            this.btn7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.Location = new System.Drawing.Point(12, 62);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(54, 55);
+            this.btn7.Size = new System.Drawing.Size(50, 55);
             this.btn7.TabIndex = 7;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
@@ -172,10 +182,11 @@ namespace Calcualadora_0101
             // btn0
             // 
             this.btn0.BackColor = System.Drawing.Color.Silver;
-            this.btn0.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn0.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.Location = new System.Drawing.Point(12, 245);
             this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(114, 55);
+            this.btn0.Size = new System.Drawing.Size(104, 55);
             this.btn0.TabIndex = 10;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
@@ -184,10 +195,11 @@ namespace Calcualadora_0101
             // btnPunto
             // 
             this.btnPunto.BackColor = System.Drawing.Color.Silver;
-            this.btnPunto.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPunto.Location = new System.Drawing.Point(132, 245);
+            this.btnPunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPunto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPunto.Location = new System.Drawing.Point(121, 245);
             this.btnPunto.Name = "btnPunto";
-            this.btnPunto.Size = new System.Drawing.Size(54, 55);
+            this.btnPunto.Size = new System.Drawing.Size(50, 55);
             this.btnPunto.TabIndex = 11;
             this.btnPunto.Text = ".";
             this.btnPunto.UseVisualStyleBackColor = false;
@@ -196,10 +208,11 @@ namespace Calcualadora_0101
             // btnSuma
             // 
             this.btnSuma.BackColor = System.Drawing.Color.Silver;
-            this.btnSuma.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuma.Location = new System.Drawing.Point(192, 245);
+            this.btnSuma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuma.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuma.Location = new System.Drawing.Point(177, 245);
             this.btnSuma.Name = "btnSuma";
-            this.btnSuma.Size = new System.Drawing.Size(54, 55);
+            this.btnSuma.Size = new System.Drawing.Size(50, 55);
             this.btnSuma.TabIndex = 15;
             this.btnSuma.Text = "+";
             this.btnSuma.UseVisualStyleBackColor = false;
@@ -208,10 +221,11 @@ namespace Calcualadora_0101
             // btnDivicion
             // 
             this.btnDivicion.BackColor = System.Drawing.Color.Silver;
-            this.btnDivicion.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivicion.Location = new System.Drawing.Point(192, 62);
+            this.btnDivicion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDivicion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDivicion.Location = new System.Drawing.Point(177, 62);
             this.btnDivicion.Name = "btnDivicion";
-            this.btnDivicion.Size = new System.Drawing.Size(54, 55);
+            this.btnDivicion.Size = new System.Drawing.Size(50, 55);
             this.btnDivicion.TabIndex = 14;
             this.btnDivicion.Text = "/";
             this.btnDivicion.UseVisualStyleBackColor = false;
@@ -220,10 +234,11 @@ namespace Calcualadora_0101
             // btnMultiplicar
             // 
             this.btnMultiplicar.BackColor = System.Drawing.Color.Silver;
-            this.btnMultiplicar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicar.Location = new System.Drawing.Point(192, 123);
+            this.btnMultiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMultiplicar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMultiplicar.Location = new System.Drawing.Point(177, 123);
             this.btnMultiplicar.Name = "btnMultiplicar";
-            this.btnMultiplicar.Size = new System.Drawing.Size(54, 55);
+            this.btnMultiplicar.Size = new System.Drawing.Size(50, 55);
             this.btnMultiplicar.TabIndex = 13;
             this.btnMultiplicar.Text = "*";
             this.btnMultiplicar.UseVisualStyleBackColor = false;
@@ -232,10 +247,11 @@ namespace Calcualadora_0101
             // btnResta
             // 
             this.btnResta.BackColor = System.Drawing.Color.Silver;
-            this.btnResta.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResta.Location = new System.Drawing.Point(192, 184);
+            this.btnResta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResta.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResta.Location = new System.Drawing.Point(177, 184);
             this.btnResta.Name = "btnResta";
-            this.btnResta.Size = new System.Drawing.Size(54, 55);
+            this.btnResta.Size = new System.Drawing.Size(50, 55);
             this.btnResta.TabIndex = 12;
             this.btnResta.Text = "-";
             this.btnResta.UseVisualStyleBackColor = false;
@@ -244,10 +260,11 @@ namespace Calcualadora_0101
             // btnCalcular
             // 
             this.btnCalcular.BackColor = System.Drawing.Color.Silver;
-            this.btnCalcular.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(252, 184);
+            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcular.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(232, 184);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(54, 116);
+            this.btnCalcular.Size = new System.Drawing.Size(50, 116);
             this.btnCalcular.TabIndex = 19;
             this.btnCalcular.Text = "=";
             this.btnCalcular.UseVisualStyleBackColor = false;
@@ -256,10 +273,11 @@ namespace Calcualadora_0101
             // btnBorrar
             // 
             this.btnBorrar.BackColor = System.Drawing.Color.Silver;
-            this.btnBorrar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.Location = new System.Drawing.Point(252, 62);
+            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.Location = new System.Drawing.Point(232, 62);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(54, 55);
+            this.btnBorrar.Size = new System.Drawing.Size(50, 55);
             this.btnBorrar.TabIndex = 18;
             this.btnBorrar.Text = "CE";
             this.btnBorrar.UseVisualStyleBackColor = false;
@@ -268,10 +286,11 @@ namespace Calcualadora_0101
             // btnBorrarT
             // 
             this.btnBorrarT.BackColor = System.Drawing.Color.Silver;
-            this.btnBorrarT.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrarT.Location = new System.Drawing.Point(252, 123);
+            this.btnBorrarT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrarT.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrarT.Location = new System.Drawing.Point(232, 123);
             this.btnBorrarT.Name = "btnBorrarT";
-            this.btnBorrarT.Size = new System.Drawing.Size(54, 55);
+            this.btnBorrarT.Size = new System.Drawing.Size(50, 55);
             this.btnBorrarT.TabIndex = 17;
             this.btnBorrarT.Text = "C";
             this.btnBorrarT.UseVisualStyleBackColor = false;
@@ -281,7 +300,8 @@ namespace Calcualadora_0101
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 311);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(292, 311);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnBorrarT);
